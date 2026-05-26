@@ -173,6 +173,10 @@ ul {
   cursor: pointer;
 }
 
+.paper-row summary::marker {
+  content: "";
+}
+
 .paper-row summary::-webkit-details-marker {
   display: none;
 }
@@ -206,13 +210,13 @@ ul {
 .paper-abstract-toggle {
   display: inline-flex;
   align-items: center;
+  gap: 0.35rem;
   margin-top: 0.4rem;
   color: var(--muted);
 }
 
 .paper-abstract-toggle::before {
   content: ">";
-  margin-right: 0.45rem;
   color: #666666;
   line-height: 1;
 }
