@@ -186,6 +186,12 @@ ul {
   margin-top: 0.18rem;
 }
 
+.paper-abstract {
+  margin: 0.75rem 0 0;
+  max-width: 44rem;
+  color: var(--muted);
+}
+
 .teaching-page {
   max-width: 52rem;
 }
