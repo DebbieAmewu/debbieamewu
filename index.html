@@ -9,10 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-    <style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
     .profile-layout { display: grid; grid-template-columns: 420px 1fr; gap: 48px; align-items: start; }
     .profile-sidebar .profile-photo { width: 100%; max-width: none; margin: 0 0 24px; }
     .profile-sidebar .profile-photo img { display: block; width: 100%; max-width: none; height: auto; }
+
+    .social-icons { display: flex; justify-content: center; gap: 28px; }
+    .social-icons a { font-size: 28px; color: #555; text-decoration: none; }
+    .social-icons a:hover { color: #1f4e79; }
 
     @media (max-width: 700px) {
       .profile-layout { grid-template-columns: 1fr; }
@@ -40,22 +45,13 @@
           <img src="9J4A8117.jpg" alt="Debbie Amewu">
         </figure>
 
-        <section>
-          <h2>Contact</h2>
-          <p>
-            University of South Carolina<br>
-            Darla Moore School of Business<br>
-            Department of Economics<br>
-            Columbia, SC 29208
-          </p>
-          <p><a href="mailto:damewu@email.sc.edu">damewu@email.sc.edu</a></p>
-          <ul class="link-list">
-            <li><a href="https://scholar.google.com/citations?user=LDVzD6gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-            <li><a href="https://www.linkedin.com/in/debbie-amewu/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://x.com/amewu__" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
-            <li><a href="https://github.com/DebbieAmewu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          </ul>
-        </section>
+                <div class="social-icons">
+          <a href="mailto:damewu@email.sc.edu" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=LDVzD6gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/debbie-amewu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/amewu__" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/DebbieAmewu" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
 
       <div class="profile-details">
