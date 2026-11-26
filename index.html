@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+    <style>
+    .profile-layout { display: grid; grid-template-columns: 420px 1fr; gap: 48px; align-items: start; }
+    .profile-sidebar .profile-photo { width: 100%; max-width: none; margin: 0 0 24px; }
+    .profile-sidebar .profile-photo img { display: block; width: 100%; max-width: none; height: auto; }
+
+    @media (max-width: 700px) {
+      .profile-layout { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
